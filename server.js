@@ -5,7 +5,7 @@ var expHndlB = require("express-handlebars")
 var app = express();
 
 //set up the port that will be connected to
-var PORT = process.env.PORT || 3000
+var PORT = process.env.PORT || 8000
 
 //set up application uses.
 app.use(express.static("public"));
