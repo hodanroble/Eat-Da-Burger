@@ -4,9 +4,9 @@ require("dotenv").config();
 
 //stash connection info in variables for easy adjustment
 var dbHost = "localhost";
-var dbPort = 3306;
+var dbPort = 3000;
 var dbUser = "root";
-var dbPassword = process.env.MYSQL_PASSWORD; //saved information for personal dba in .env
+var dbPassword = "Ruwayda100!"; //saved information for personal dba in .env
 var dbDatabase = "burgers_db";
 
 //connect the application up to the mysql dba.
