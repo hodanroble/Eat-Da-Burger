@@ -14,7 +14,7 @@ router.get("/", function(req, result) {
 });
 
 //post the information for creating a new burger
-router.post("/api/burgers", function(req, result) {
+router.post("/api/Eat-Da-Burger", function(req, result) {
     burgersMod.insertOne([
         "name", "devoured"
     ], [
@@ -26,7 +26,7 @@ router.post("/api/burgers", function(req, result) {
 
 //post information for devouring a burger
 //put the information up on the site
-router.put("/api/burgers/:id", function(req, res) {
+router.put("/api/Eat-Da-Burger/:id", function(req, res) {
     var condition = "id = " + req.params.id;
 
     console.log("condition", condition);
@@ -42,3 +42,4 @@ router.put("/api/burgers/:id", function(req, res) {
         }
     });
 });
+module.exports = router;
